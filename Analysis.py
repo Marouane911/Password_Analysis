@@ -23,7 +23,7 @@ def analyser_mot_de_passe(mot_de_passe):
     elif not erreurs and len(mot_de_passe) > 18 :  # Si la liste des erreurs est toujours vide, et que le mot de passe passe est strictement supérieur à 18, le mot de passe est très fort
         print("Votre mot de passe est très fort.")
     else:
-        print("Votre mot de passe doit contenir" + ", \n".join(erreurs)) # Si la liste des erreurs n'est pas vide, on lui ajoute toutes les erreurs que l'utilisateur a commis et on imprime
+        print("Votre mot de passe est faible, \nil doit contenir" + ", \n".join(erreurs)) # Si la liste des erreurs n'est pas vide, on lui ajoute toutes les erreurs que l'utilisateur a commis et on imprime
 
 
     ### ESTIMATION DU TEMPS DE CRACKAGE ###
